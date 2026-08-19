@@ -42,12 +42,12 @@ class NeverWin:
         self.root.minsize(760, 540)
 
         # --- состояние переключателей ---
-        self.anti_aimbot  = tk.BooleanVar(False)
-        self.anti_aimless = tk.BooleanVar(False)
-        self.gamesense    = tk.BooleanVar(False)
-        self.esp          = tk.BooleanVar(False)
-        self.recoil       = tk.BooleanVar(False)
-        self.anti_bhop    = tk.BooleanVar(False)
+        self.anti_aimbot  = tk.BooleanVar(value=False)
+        self.anti_aimless = tk.BooleanVar(value=False)
+        self.gamesense    = tk.BooleanVar(value=False)
+        self.esp          = tk.BooleanVar(value=False)
+        self.recoil       = tk.BooleanVar(value=False)
+        self.anti_bhop    = tk.BooleanVar(value=False)
         self.fps_var      = tk.StringVar(value="0 FPS")
 
         self._build_ui()
